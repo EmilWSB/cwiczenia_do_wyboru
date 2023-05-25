@@ -1,11 +1,12 @@
 package biblioteka;
 
-
+import java.util.ArrayList;
+import java.util.List;
 /**
  * Klasa "Biblioteka" reprezentuje całą bibliotekę.
  */
 public class Biblioteka {
-    private List<Ksiazka> kolekcjaKsiazek;
+    private final List<Ksiazka> kolekcjaKsiazek;
 
     /**
      * Konstruktor tworzący obiekt klasy Biblioteka.

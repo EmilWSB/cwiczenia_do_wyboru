@@ -13,8 +13,9 @@ import uzytkownik.Uzytkownik;
 public class Testowanie {
     public static void main(String[] args) {
         // Tworzenie obiektów klasy Ksiazka
-        Ksiazka ksiazka1 = new Ksiazka("Tytuł 1", "Autor 1", 2020);
-        Ksiazka ksiazka2 = new Ksiazka("Tytuł 2", "Autor 2", 2018);
+        Ksiazka ksiazka1 = new Ksiazka("Harry Potter i Kamień Filozoficzny", "Rowling J. K.", 2016);
+        Ksiazka ksiazka2 = new Ksiazka("Zwierzogród", "Suzanne Francis", 2016);
+        Ksiazka ksiazka3 = new Ksiazka("Nawyki warte miliony", "Tracy Brian", 2021);
 
         // Tworzenie obiektu klasy Biblioteka
         Biblioteka biblioteka = new Biblioteka();
@@ -22,6 +23,7 @@ public class Testowanie {
         // Dodawanie książek do biblioteki
         biblioteka.dodajKsiazke(ksiazka1);
         biblioteka.dodajKsiazke(ksiazka2);
+        biblioteka.dodajKsiazke(ksiazka3);
 
         // Wyświetlanie informacji o książkach w bibliotece
         for (Ksiazka ksiazka : biblioteka.getKolekcjaKsiazek()) {
@@ -29,7 +31,7 @@ public class Testowanie {
         }
 
         // Tworzenie obiektu klasy Uzytkownik
-        Uzytkownik uzytkownik = new Uzytkownik("Jan", "Kowalski", 12345);
+        Uzytkownik uzytkownik = new Uzytkownik("Jan", "Kowalski", 1);
 
         // Wyświetlanie informacji o użytkowniku
         System.out.println("Imię: " + uzytkownik.getImie());
