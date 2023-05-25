@@ -6,12 +6,18 @@ package test;
 import biblioteka.Biblioteka;
 import biblioteka.Ksiazka;
 import uzytkownik.Uzytkownik;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Klasa "Testowanie" testuje funkcjonalność powyższych klas.
  */
 public class Testowanie {
     public static void main(String[] args) {
+        String text = "Witaj w księgarni! ";
+        System.out.printf(text);
+        // Użycie zewnętrznego pakietu
+        String reversedText = StringUtils.reverse(text);
+        System.out.println(reversedText); // wyświetli odwrócony tekst zmiennej text
         // Tworzenie obiektów klasy Ksiazka
         Ksiazka ksiazka1 = new Ksiazka("Harry Potter i Kamień Filozoficzny", "Rowling J. K.", 2016);
         Ksiazka ksiazka2 = new Ksiazka("Zwierzogród", "Suzanne Francis", 2016);
@@ -37,5 +43,7 @@ public class Testowanie {
         System.out.println("Imię: " + uzytkownik.getImie());
         System.out.println("Nazwisko: " + uzytkownik.getNazwisko());
         System.out.println("Numer identyfikacyjny: " + uzytkownik.getNumerIdentyfikacyjny());
+
+        System.out.println("Autor: Emil, 22834, grupa C8");
     }
 }
